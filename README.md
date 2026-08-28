@@ -15,7 +15,7 @@ in a separate private repo.
 
 ## Before going live
 
-Replace `SUPPORT@EXAMPLE.COM` in both files with a real, monitored address.
+Contact address on both pages: `support@hunterappliedtechnologies.com`
 
 ## Notes
 
