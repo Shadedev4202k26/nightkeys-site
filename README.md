@@ -13,7 +13,7 @@ This repo is public because GitHub Pages on a free account only publishes from p
 repositories. It contains the website only — the app source and business material live
 in a separate private repo.
 
-## Before going live
+## Contact
 
 Contact address on both pages: `support@hunterappliedtechnologies.com`
 
