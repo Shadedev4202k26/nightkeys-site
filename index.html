@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nightkeys — Support</title>
+<meta name="description" content="Support and help for Nightkeys, the Mac app that lights your keyboard using your display.">
+<style>
+  :root{
+    --bg:#faf9f7; --fg:#1a1a1c; --muted:#5f5f68; --line:#e2e0dc;
+    --card:#fff; --accent:#b8860b;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#0e0e10; --fg:#ececf0; --muted:#9a9aa4; --line:#26262b;
+           --card:#161619; --accent:#e8b04b; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:680px;margin:0 auto;padding:56px 24px 80px}
+
+  header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:36px}
+  .mark{display:inline-block;width:44px;height:10px;border-radius:3px;
+    background:linear-gradient(90deg,var(--accent),#fff8e7);margin-bottom:18px}
+  h1{margin:0 0 8px;font-size:30px;letter-spacing:-.02em}
+  .tag{margin:0;color:var(--muted);font-size:17px}
+
+  h2{margin:40px 0 12px;font-size:19px;letter-spacing:-.01em}
+  h3{margin:26px 0 6px;font-size:15px}
+  p{margin:0 0 14px}
+  ul{margin:0 0 14px;padding-left:20px}
+  li{margin-bottom:7px}
+  a{color:var(--accent)}
+
+  dl{margin:0}
+  dt{font-weight:600;margin-top:20px}
+  dd{margin:5px 0 0;color:var(--muted)}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+    padding:18px 20px;margin:22px 0}
+  code{font:13px ui-monospace,SFMono-Regular,Menlo,monospace;
+    background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1px 5px}
+  footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="mark"></div>
+  <h1>Nightkeys</h1>
+  <p class="tag">Light your keyboard using your screen.</p>
+</header>
+
+<p>Nightkeys turns the bottom edge of your display into an adjustable lamp that shines
+down across your keys — for laptops that ship without a backlit keyboard.</p>
+
+<h2>Getting started</h2>
+<ul>
+  <li>Nightkeys runs in the menu bar. There is no Dock icon and no window — that's by design.</li>
+  <li>Click the lightbulb icon in the menu bar to open the controls.</li>
+  <li>Toggle the light on and off at the top of the panel.</li>
+</ul>
+
+<div class="card">
+  <strong>The effect is only obvious in a dim or dark room.</strong> In bright daylight
+  the bar looks like a plain white strip, because your keyboard is already lit.
+</div>
+
+<h2>The controls</h2>
+<dl>
+  <dt>Brightness</dt>
+  <dd>How much light the bar emits. Maximum output is pure white — every step away
+      from white costs you some brightness.</dd>
+
+  <dt>Temperature</dt>
+  <dd>Warm to cool, 1200K to 10000K, on a true blackbody curve. Warmer light is easier
+      on your eyes late at night; cooler light gives you more of it.</dd>
+
+  <dt>Color</dt>
+  <dd>Hue and saturation for a tinted light. Deep amber at low brightness preserves
+      night vision better than white. Saturated colors emit noticeably less light.</dd>
+
+  <dt>Bar height</dt>
+  <dd>How tall the lit strip is. Taller throws more light but covers more of your
+      screen. Most keyboards are happy somewhere around 20%.</dd>
+
+  <dt>Soft edge</dt>
+  <dd>Feathers the top of the bar so it doesn't cut a hard line across whatever you're
+      reading.</dd>
+</dl>
+
+<h2>Questions</h2>
+
+<h3>The light disappears when an app goes full screen.</h3>
+<p>macOS gives full-screen apps their own private Space, and the system does not
+guarantee that any overlay stays above them. Nightkeys asks to appear in all Spaces
+and it works in most cases, but some apps — particularly games and video players —
+can still cover it. There is no public API that fixes this reliably. If you hit it,
+using the app in a normal window rather than full screen restores the light.</p>
+
+<h3>There's no icon in my Dock.</h3>
+<p>Correct. Nightkeys is a menu bar utility. Look for the lightbulb near your clock.</p>
+
+<h3>Does it show up in screenshots or on screen shares?</h3>
+<p>No. The light bar is deliberately excluded from screen captures and screen sharing,
+so it won't appear in recordings or on calls.</p>
+
+<h3>Does it use more battery?</h3>
+<p>Slightly, yes. Your display is doing the work of a lamp, and bright pixels cost
+power. Lower brightness and a shorter bar reduce it.</p>
+
+<h3>I have more than one display.</h3>
+<p>Nightkeys puts a bar on every connected display and adjusts automatically when you
+plug one in or unplug it.</p>
+
+<h3>Will there be a Windows version?</h3>
+<p>Not currently. If that's something you'd use, say so by email — it helps to know.</p>
+
+<h3>I'd like a refund.</h3>
+<p>Refunds are handled by Apple, not by me. Visit
+<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> and select the
+purchase.</p>
+
+<h2>Contact</h2>
+<p>Email <a href="mailto:SUPPORT@EXAMPLE.COM">SUPPORT@EXAMPLE.COM</a> and I'll get back
+to you. Bug reports are genuinely welcome — please include your macOS version and
+which Mac you're using.</p>
+
+<footer>
+  <a href="privacy.html">Privacy Policy</a> · Nightkeys is made by Shadedev.
+</footer>
+
+</div>
+</body>
+</html>
